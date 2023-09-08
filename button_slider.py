@@ -28,15 +28,6 @@ st.title('Multi-Select')
 options = ['Reading', 'Cooking', 'Watching Movies/TV Series', 'Playing', 'Drawing', 'Hiking']
 hobbies = st.multiselect('what are your hobbies', options, default=options[0:2])
 
-st.title('Download Button')
-down_btn = st.download_button(
-    label='Download Animal Image',
-    data=open('./animal.jpeg', 'rb'),
-    file_name='animal.jpeg',
-    mime='image/jpeg',
-    disabled=True,
-)
-
 st.title('Progress Bar')
 
 
